@@ -1,0 +1,147 @@
+ <html>
+     <head>
+         <title>CADESONE HOUSING  </title>
+         <link rel="shortcut icon" href="/images/Clogo.jpg" type="image/icon type">
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bad+Script&family=Open+Sans:wght@300;400;600&family=Poppins:wght@700&family=Raleway:wght@200&family=Roboto:wght@100;300;500&family=Sacramento&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     </head>
+     <body>
+         <section id="banner">
+             <img src="images/Clogo.jpg" class="circular--square" alt="logo">
+             <div class="banner-text">
+                 <h1>CADESONE HOUSING</h1>
+                 <P>Where Luxury Meets Convenience.</P>
+                 <div class="banner-btn">
+                     <a href="login.php"><span></span>Login</a>
+                 </div>
+             </div>
+              </section>
+            <div id="sideNav">
+                <nav>
+                    <ul>
+                        <li><a href="#banner">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="index.php">DASHBOARD</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="login.php">LOGIN</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menuBtn">
+                <img src="images/menu.png" id="menu" alt="">
+            </div>
+
+            <!--Features-->
+
+            <section id ="feature">
+                <div class ="title-text">
+                <p>FEATURES</p>
+                <h1>Why Choose Us</h1>
+                </div>
+                <div class="feature-box">
+                    <div class="features">
+                     <h1>Adequate Water Supply</h1>
+                        <div class="features-desc">
+                            <div class="feature-icon">
+                                <i class="fa fa-tint"></i>
+                            </div>
+                            <div class="feature-text">
+                                <p>Experirence non-stop water supply without any shortage 24/7.we provide our tenants with clean and quality water with has a frequent supply with any worry of shortage. </p>
+                       </div>
+                   </div>
+                    <h1>High Security</h1>
+                         <div class="features-desc">
+                             <div class="feature-icon">
+                                 <i class="fa fa-shield"></i>
+                             </div>
+                             <div class="feature-text">
+                                 <p>Got Security worries? Well, you do not have to worry no more, we've got your back because our premises are always highly secured. </p>
+                        </div>
+                    </div>
+                    <h1>Serene Environment</h1>
+                         <div class="features-desc">
+                             <div class="feature-icon">
+                                 <i class="fa fa-envira"></i>
+                             </div>
+                             <div class="feature-text">
+                                 <p>Our Apartments are located in Environment-suited surrounding, giving our tenants a a peaceful lifestyle and an enjoyable surrounding.</p>
+                        </div>
+                    </div>
+                    <h1>Affordable Cost</h1>
+                         <div class="features-desc">
+                             <div class="feature-icon">
+                                 <i class="fa fa-usd"></i>
+                             </div>
+                             <div class="feature-text">
+                                 <p>The cost of renting with us will perfectly fit in within your budget with affordable housing being our main agenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-img">
+                    <img src="images/housing.jpg" alt="image">
+                </div>
+            </div>
+            </section>
+            <!--footer-->
+            <section id="footer"> 
+                <img src="images/log.png" class="footer-img">
+                <div class="title-text">
+                    <p>CONTACT</p>
+                    <h1>Visit us Today.</h1>
+                </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h3>Location</h3>
+                    <p><i class="fa fa-location-arrow"></i>Kasarani - Nairobi,Kenya</p>
+                    <p><i class="fa fa-road"></i>Off Thika Road.</p>
+                </div>
+                <div class="footer-right">
+                    <h3>Get In Touch</h3>
+                    <p>+254712345678<i class="fa fa-phone-square"></i></p>
+                    <p>email@gmail.com<i class="fa fa-envelope"></i></p>
+                   <p><a href="https://cadesone.com/" style="color:#000" target="_blank">www.cadesone.com</a><i class="fa fa-globe"></i></p>
+                </div>
+            </div>
+            <div class="social-links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <p>Copyright <a href="https://molbstech.com/" style="color:#009689" target="_blank">Molbs Tech</a></p>
+
+            </div>
+            </section>
+
+
+            <script>
+                var menuBtn =document.getElementById("menuBtn")
+                var SideNav =document.getElementById("sideNav")
+                var menu =document.getElementById("menu")
+                sideNav.style.right = "-250px";
+                menuBtn.onclick = function(){
+                    if(SideNav.style.right == "-250px"){
+                        SideNav.style.right = "0";
+                        menu.src ="images/close.png";
+                    }
+                    else{
+                        sideNav.style.right ="-250px"
+                        menu.src ="images/menu.png";
+                    }
+                }
+                var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+            </script>
+         
+     </body>
+ </html>

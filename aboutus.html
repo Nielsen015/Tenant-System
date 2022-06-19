@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CADESONE|ABOUT US</title>
+	 <link rel="shortcut icon" href="/images/Clogo.jpg" type="image/icon type">
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bad+Script&family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;900&family=Raleway:wght@200&family=Roboto:wght@100;300;500&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+</head>
+<body>
+	<section>
+		<img src="images/Clogo.jpg" class="circular--square" alt="logo">
+	</section>
+	<div id="sideNav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="tenants.php">DASHBOARD</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="signin.php">LOGIN</a></li>
+                        <li><a href="signup.php">REGISTER</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menuBtn">
+                <img src="images/menu.png" id="menu" alt="">
+            </div>
+	<section class="about">		
+		<div class="content">
+			<h2>About us</h2>					
+		</div>
+		<div class="container">
+			<div class="aboutInfo">
+				<div class="box">					
+						<img src="images/Clogo.jpg" class="logo-wrapper" alt="logo">							
+				</div>			
+			</div>
+			<div class="about-wrapper">
+				<h2>Cadesone housing</h2>
+				<p>Cadesone is here to mitigate the difficulties of rental property management. It provides a platform for landlords, caretakers and tenants to communicate and perform transactions remotely. Vacant houses can be posted and viewed on the site, thus providing a means to target a wider market of potential tentants. The system is efficient, easy to use and readily available.</p>
+			</div>			
+		</div>	
+	
+	</section>
+	<!--footer-->
+<section id="footer"> 
+    <img src="images/log.png" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT</p>
+      <h1>Visit us Today.</h1>
+    </div>
+<div class="footer-row">
+    <div class="footer-left">
+        <div class="format-footer-text"><h3>Location</h3></div>
+        <p><i class="fa fa-location-arrow"></i>Kasarani - Nairobi,Kenya</p>
+        <p><i class="fa fa-road"></i>Off Thika Road.</p>
+         
+   </div>
+    <div class="footer-right">
+        <h3>Get In Touch</h3>
+        <p>+254712345678<i class="fa fa-phone-square"></i></p>
+        <p>email@gmail.com<i class="fa fa-envelope"></i></p>
+       <p><a href="https://cadesone.com/" style="color:#000" target="_blank">www.cadesone.com</a><i class="fa fa-globe"></i></p>
+    </div>
+</div>
+<div class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <p>Copyright <a href="https://molbstech.com/" style="color:#009689" target="_blank">Molbs Tech</a></p>
+
+</div>
+</section>
+	 <script>
+                var menuBtn =document.getElementById("menuBtn")
+                var SideNav =document.getElementById("sideNav")
+                var menu =document.getElementById("menu")
+                sideNav.style.right = "-250px";
+                menuBtn.onclick = function(){
+                    if(SideNav.style.right == "-250px"){
+                        SideNav.style.right = "0";
+                        menu.src ="images/close.png";
+                    }
+                    else{
+                        sideNav.style.right ="-250px"
+                        menu.src ="images/menu.png";
+                    }
+                }
+                var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true
+});
+            </script>
+
+</body>
+</html>
